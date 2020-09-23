@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/9b0eb8a7-cf4d-4fc3-b67b-cf207aa2ec97/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/goranljiljak",
+    "appService.deploySubpath": "."
+}
