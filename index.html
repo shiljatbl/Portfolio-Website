@@ -18,7 +18,39 @@
         <link href="css/myStyles.css" rel="stylesheet" />
         <link href="css/timeline.css" rel="stylesheet" />
         <link href="css/ufo.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+        
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+        
+        <style>
+            .tech-icons i,
+            .tech-icons span {
+                position: relative;
+                padding: 0 1em;
+            }
+        
+            .tech-icons .icon-wrapper:not(:last-child) {
+    border-right: 2px solid white;
+}
+
+        
+            .icon-wrapper {
+                display: inline-flex;
+                flex-direction: column; /* Stack icon and label vertically */
+                align-items: center;
+                justify-content: center;
+                width: 10em; /* Adjust as needed for uniformity */
+                height: 10em; /* Matches other icons' overall space */
+                padding: 1em; /* Add space around the icons */
+            }
+        
+            .icon-wrapper p {
+                font-size: 1rem; /* Adjust font size for label */
+                color: #fff; /* White text color to match theme */
+                margin: 0;
+                text-align: center; /* Center-align the label */
+            }
+        </style>
         
     </head>
     <body id="page-top">
@@ -35,9 +67,9 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About Me</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#experience">Experience</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Skills</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Technologies</a></li>
+                        <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li> -->
+                       <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li> -->
                         <li class="nav-item mx-0 mx-lg-1"><a class="btn btn-primary btn-sm py-3 px-0 px-lg-3 rounded" style="font-weight: bold" href="assets/resume/Resume.pdf">Resume</a></li>
                     </ul>
                 </div>
@@ -81,22 +113,28 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg ml-auto"><p class="lead text-secondary">Hello there!  I am Goran, a seasoned professional with a diverse background in the dynamic realms of data engineering, SAP support, e-commerce project management, and sales analytics. Based in Novi Sad, Vojvodina, Serbia, my career journey has been marked by continuous growth and a passion for leveraging technology to drive business success.</p></div>
+                    <div class="col-lg ml-auto"><p class="lead text-secondary">As a passionate and results-driven Data Engineer with 3 years of experience, I specialize in designing and implementing robust data solutions using tools like Power BI, Power Query, Google Cloud Platform, and Apache Airflow. My proficiency in SQL and experience with Python allow me to efficiently transform complex datasets into actionable insights, empowering businesses to make data-driven decisions.</p></div>
                     
                 </div>
                 <div class="row">
-                    <div class="col-lg ml-auto"><p class="lead text-secondary">In my current role as a Senior Data Engineer at Global Sports Group, I am immersed in the world of remote work, applying my expertise in Microsoft Power BI, Office 365, ETL processes, data governance, and Microsoft Power Query. With over 2 years in this position, I am actively contributing to the seamless flow and utilization of data within the organization.</p></div>
+                    <div class="col-lg ml-auto"><p class="lead text-secondary">Before transitioning to Data Engineering, I spent 2 years as an SAP Consultant, where I gained valuable expertise in ERP systems, process optimization, and integrating technology into business workflows. This unique combination of skills gives me a strong understanding of both data infrastructure and business operations, enabling me to bridge the gap between technical and strategic objectives.</p></div>
                     
                 </div>
 
                 <div class="row">
-                    <div class="col-lg ml-auto"><p class="lead text-secondary">Throughout my career, I have cultivated a passion for harnessing the power of data and technology to drive business success. I thrive in dynamic environments, adapt quickly to emerging trends, and am committed to delivering results that make a tangible impact.
+                    <div class="col-lg ml-auto"><p class="lead text-secondary">I am fluent in both German and English, which helps me effectively communicate and collaborate in international and multilingual environments.</p></div>
+                    
+                </div>
 
-Join me on this professional journey as we navigate the ever-evolving landscape of technology, data, and business innovation. Let's connect and explore opportunities to collaborate, innovate, and achieve mutual success.</p></div>
+                <div class="row">
+                    <div class="col-lg ml-auto"><p class="lead text-secondary">I thrive in dynamic settings, leveraging my analytical mindset and technical expertise to solve complex challenges. Whether it's building scalable ETL pipelines, optimizing dashboards, or orchestrating data workflows, I am committed to delivering impactful solutions that align with organizational goals.</p></div>
                     
                 </div>
                 
-                
+                <div class="row">
+                    <div class="col-lg ml-auto"><p class="lead text-secondary">Let’s connect to discuss how we can collaborate to drive innovation and unlock the full potential of data.</p></div>
+                    
+                </div>
 
             </div>
         </section>
@@ -125,12 +163,53 @@ Join me on this professional journey as we navigate the ever-evolving landscape 
                     
                     <div class="col-8 ml-auto mr-auto text-center">
                         <hr class="bg-primary">
-                        
                         <div class="row">
                             <div class="col"> 
-                                <h4>SAP Suppport Consultant</h5>
+                                <h4>Data Engineer</h5>
+                                <h5 class="text-primary">Gorilla Sports Balkans d.o.o., Novi Sad</h5>
+                                <p>June 2023 - Present</p>
+                                
+                                <ul class="text-left">
+                                    <li>Power BI Desktop & Service</li>
+                                    <li>PowerQuery</li>
+                                    <li>Power Platform</li>
+                                    <li>Python | SQL</li>
+                                    <li>Google Cloud Platform (BigQuery)</li>
+                                    <li>Apache Airflow</li>
+                                    
+                                    
+                                </ul>
+                                
+                                
+                            </div>
+                        </div>
+                        <hr class="bg-primary">
+                        <div class="row">
+                            <div class="col"> 
+                                <h4>Data Engineer</h5>
                                 <h5 class="text-primary">Remade d.o.o., Novi Sad</h5>
-                                <p>October 2020 - Present</p>
+                                <p>September 2022 - June 2023</p>
+                                
+                                <ul class="text-left">
+                                    <li>Power BI Desktop & Service</li>
+                                    <li>PowerQuery</li>
+                                    <li>Power Platform</li>
+                                    <li>Python | SQL</li>
+                                    <li>Google Cloud Platform (BigQuery)</li>
+                                    <li>Apache Airflow</li>
+                                    
+                                    
+                                </ul>
+                                
+                                
+                            </div>
+                        </div>
+                        <hr class="bg-primary">
+                        <div class="row">
+                            <div class="col"> 
+                                <h4>SAP Support Consultant</h5>
+                                <h5 class="text-primary">Remade d.o.o., Novi Sad</h5>
+                                <p>October 2020 - September 2022</p>
                                 
                                 <ul class="text-left">
                                     <li>SAP B1 1st and 2nd level Support</li>
@@ -276,7 +355,7 @@ Join me on this professional journey as we navigate the ever-evolving landscape 
         <section class="page-section bg-primary text-white mb-0" id="skills">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Education & Skills</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">Technologies</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -284,170 +363,64 @@ Join me on this professional journey as we navigate the ever-evolving landscape 
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
+                <!-- Technologies Section -->
                 <div class="row">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg mr-auto ml-5">
-                                <div class="row">
-                                    <div class="col"> 
-                                        <h4 class="text-secondary">Advanced Web .Net Programing</h5>
-                                        <h5 class="text-default">FTN Informatika, Novi Sad</h5>
-                                        <p>2019 - 2020</p>
-                                        
-                                        
-                                        
-                                    </div>
+                    <div class="container text-center my-5">
+                
+                        <div class="row mb-4">
+                            <div class="col">
+                                <h4>Programming Languages</h4>
+                                <div class="d-flex justify-content-center gap-4 flex-wrap tech-icons">
+                                    <i class="devicon-azuresqldatabase-plain" style="font-size: 5em;" title="SQL"></i>
+                                    <i class="devicon-python-plain-wordmark" style="font-size: 5em;" title="Python"></i>
                                 </div>
-        
-                                <hr class="bg-secondary">
-        
-                                <div class="row">
-                                    <div class="col"> 
-                                        <h4 class="text-secondary">Fundamentals of Programming</h4>
-                                            <h5 class="text-default">FTN Informatika, Novi Sad</h5>
-                                            <p>2019 - 2019</p>
-                                            
-                                    </div>
-                                </div>
-                                <hr class="bg-secondary">
-                                <div class="row">
-                                    <div class="col"> 
-                                        <h4 class="text-secondary">Mechanical Engineering</h4>
-                                            <h5 class="text-default">Faculty of Technical Sciences, Novi Sad</h4>
-                                            <p>2008 - Present</p>
-                                            
-                                            
-                                            
-                                    </div>
-                                </div>
-                                <hr class="bg-secondary">
-                                <div class="row">
-                                    <div class="col"> 
-                                        <h4 class="text-secondary">Mechanical Technician - CAD Design</h4>
-                                        <h5 class="text-default">TŠ "Mihajlo Pupin", Inđija</h5>
-                                        <p>2004 - 2008</p>
-                                            
-                                            
-                                            
-                                    </div>
-                                </div>
-                                <hr class="bg-secondary">
-                                <div class="row">
-                                    <div class="col"> 
-                                        <h4 class="text-secondary">Elementary School</h4>
-                                            <h5 class="text-default">OŠ "Petar Kočić", Inđija</h5>
-                                            <p>1998-2004</p>
-                                            
-                                            
-                                            
-                                    </div>
-                                </div>
-                                <hr class="bg-secondary">
-                                <div class="row">
-                                    <div class="col"> 
-                                        <h4 class="text-secondary">Elementary School</h4>
-                                            <h5 class="text-default">Grundschule Jesteburg, Jesteburg (Germany)</h5>
-                                            <p>1996-1998</p>
-                                            
-                                            
-                                            
-                                    </div>
-                                </div>
-                                <hr class="bg-secondary">
-                            </div>
-                            <div class="col-md-6">
-                                
-                                <h4>Backend Technologies</h4>
-
-                                <i class="devicon-csharp-line" style="font-size: 7em;"></i>
-
-                                <i class="devicon-python-plain-wordmark" style="font-size: 7em;"></i>
-
-                                
-                                <i class="devicon-javascript-plain" style="font-size: 7em;"></i>
-
-                                
-                                
-
-                                <br>
-
-                                <h4>Frontend Technologies</h4>
-
-                                <i class="devicon-html5-plain-wordmark" style="font-size: 7em;"></i>
-                                <i class="devicon-css3-plain-wordmark" style="font-size: 7em;"></i>
-                                
-                                <br>
-                                <h4>Database</h4>
-                                <i class="devicon-microsoftsqlserver-plain-wordmark" style="font-size: 7em;"></i>
-                                <i class="devicon-mysql-plain-wordmark" style="font-size: 7em;"></i>
-                                <i class="devicon-postgresql-plain-wordmark" style="font-size: 7em;"></i>
-
-
-                                <br>
-                                <h4>Frameworks</h4>
-
-                                <i class="devicon-django-plain" style="font-size: 7em;"></i>
-                                <i class="devicon-flask-original-wordmark" style="font-size: 7em;"></i>
-                                <i class="devicon-dot-net-plain-wordmark" style="font-size: 7em;"></i>
-
-
-
-                                
-
-                                
                             </div>
                         </div>
+                
+                        <br>
+                
+                        
+                
+                        <div class="row mb-4">
+                            <div class="col">
+                                <h4>Cloud Technologies</h4>
+                                <div class="d-flex justify-content-center gap-4 flex-wrap tech-icons">
+                                    <span class="icon-wrapper text-center">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" style="width: 5em; height: 5em;" />
+                                        <p>Google Cloud Platform</p>
+                                    </span>
+                                    
+                                    <span class="icon-wrapper text-center">
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 5em; height: 5em; fill: white;">
+                                            <title>Google BigQuery</title>
+                                            <path d="M5.676 10.595h2.052v5.244a5.892 5.892 0 0 1-2.052-2.088v-3.156zm18.179 10.836a.504.504 0 0 1 0 .708l-1.716 1.716a.504.504 0 0 1-.708 0l-4.248-4.248a.206.206 0 0 1-.007-.007c-.02-.02-.028-.045-.043-.066a10.736 10.736 0 0 1-6.334 2.065C4.835 21.599 0 16.764 0 10.799S4.835 0 10.8 0s10.799 4.835 10.799 10.8c0 2.369-.772 4.553-2.066 6.333.025.017.052.028.074.05l4.248 4.248zm-5.028-10.632a8.015 8.015 0 1 0-8.028 8.028h.024a8.016 8.016 0 0 0 8.004-8.028zm-4.86 4.98a6.002 6.002 0 0 0 2.04-2.184v-1.764h-2.04v3.948zm-4.5.948c.442.057.887.08 1.332.072.4.025.8.025 1.2 0V7.692H9.468v9.035z"/>
+                                        </svg>
+                                        <p>Google BigQuery</p>
+                                    </span>
+                        
+                                    <span class="icon-wrapper text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="5em" height="5em" viewBox="0 0 48 48">
+                                            <path fill="#eda503" d="M38,44H26c-0.552,0-1-0.448-1-1V5c0-0.552,0.448-1,1-1h12c0.552,0,1,0.448,1,1v38	C39,43.552,38.552,44,38,44z"></path><path fill="#ffca28" d="M30,44H18c-0.552,0-1-0.448-1-1V15c0-0.552,0.448-1,1-1h12c0.552,0,1,0.448,1,1v28	C31,43.552,30.552,44,30,44z"></path><path fill="#ffe082" d="M22,44H10c-0.552,0-1-0.448-1-1V25c0-0.552,0.448-1,1-1h12c0.552,0,1,0.448,1,1v18	C23,43.552,22.552,44,22,44z"></path>
+                                        </svg>
+                                        <p>Power BI</p>
+                                    </span>
+                        
+                                    <span class="icon-wrapper text-center">
+                                        <i class="devicon-apacheairflow-plain" style="font-size: 5em;" title="Apache Airflow"></i>
+                                        <p>Apache Airflow</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
                 
-        </section>
 
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio bg-secondary" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><p>Merlin's Magic Shop</p></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/merlinsMagic.png" alt="" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><p>eCommerce ERP App</p></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/bakierp.png" alt="" />
-                        </div>
-                    </div>
-
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><p>Pain Help Shopify Store</p></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/painhelp.png" alt="" />
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+                
         </section>
-        
+      
         
 
 
@@ -505,7 +478,7 @@ Join me on this professional journey as we navigate the ever-evolving landscape 
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer text-center bg-primary">
+        <footer class="footer text-center bg-secondary">
             <div class="container">
                 <div class="row">
                     <!-- Footer Location-->
@@ -542,229 +515,7 @@ Join me on this professional journey as we navigate the ever-evolving landscape 
         <div class="scroll-to-top d-lg-none position-fixed">
             <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Amazon Trends</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <a href="https://merlinsmagic.shop/" target="_blank"><img class="img-fluid rounded mb-5" src="assets/img/portfolio/merlinsMagic.png" alt="" /></a>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Example of Shopify website built for a Magic Shop</p>
-                                    <a href="https://merlinsmagic.shop/" target="_blank">
-                                        <button class="btn btn-success">
-                                        
-                                        Preview
-                                        </button>
-                                    </a>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">eCommerce ERP App</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <a href="http://bakierp.azurewebsites.net" target="_blank"><img class="img-fluid rounded mb-5" src="assets/img/portfolio/bakierp.png" alt="" /></a>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Due to my experience in eCommerce, I managed to build an ERP system that would satisfy the needs of an average Amazon Seller. Developed in the ASP.Net Framework, with implemented Bootstrap theme, and with stored data in a Azure SQL Database. Deployed on Azure.</p>
-                                    <a href="http://bakierp.azurewebsites.net" target="_blank">
-                                        <button class="btn btn-success">
-                                        
-                                        Preview
-                                        </button>
-                                    </a>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Shopify Store</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <a href="https://painhelpstore.com/" target="_blank"><img class="img-fluid rounded mb-5" src="assets/img/portfolio/painhelp.png" alt="" /></a>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Pain relief niche eCommerce store built on the Shopify platform. Custom theme with updated elements. Product info import and payment processor setup.</p>
-                                    <a href="https://painhelpstore.com/" target="_blank">
-                                        <button class="btn btn-success">
-                                        
-                                        Preview
-                                        </button>
-                                    </a>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Controller</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Locked Safe</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                    </button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
