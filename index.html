@@ -55,6 +55,14 @@
                 text-align: center; /* Center-align the text inside each list item */
                 width: fit-content; /* Ensures the width of the list matches its content */
             }
+            .card {
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Even bigger shadow */
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
         </style>
         
         
@@ -63,7 +71,13 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Goran Ljiljak</a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top" style="text-align: center;">
+                    <span style="display: block; font-size: 1.25rem;">Goran Ljiljak</span>
+                    <span style="display: block; font-size: 0.75rem; text-transform: none;">Data Engineer</span>
+                </a>
+                
+                
+                
                 
                 <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -150,213 +164,184 @@
 
         
 
-        <!-- Experience Section-->
-        <section class="page-section bg-secondary text-white mb-0" id="experience">
+        <!-- Experience Section -->
+<section class="page-section bg-secondary text-white mb-0" id="experience">
+    <div class="container">
+        <!-- Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase text-white">Experience</h2>
+        <!-- Icon Divider -->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Content -->
+        <div class="row">
+            <!-- Card Grid -->
+            <div class="col-12 d-flex flex-wrap justify-content-center">
+
+                <!-- Data Engineer - Gorilla Sports -->
+                <div class="card text-dark bg-light m-3" style="width: 22rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">Data Engineer</h4>
+                        <h5 class="card-subtitle text-primary">Gorilla Sports Balkans d.o.o., Novi Sad</h5>
+                        <p class="card-text">June 2023 - Present</p>
+                        <ul>
+                            <li>Power BI Desktop & Service</li>
+                            <li>PowerQuery</li>
+                            <li>Python | SQL</li>
+                            <li>Google Cloud Platform (BigQuery)</li>
+                            <li>Apache Airflow</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Data Engineer - Remade -->
+                <div class="card text-dark bg-light m-3" style="width: 22rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">Data Engineer</h4>
+                        <h5 class="card-subtitle text-primary">Remade d.o.o., Novi Sad</h5>
+                        <p class="card-text">September 2022 - June 2023</p>
+                        <ul>
+                            <li>Power BI Desktop & Service</li>
+                            <li>PowerQuery</li>
+                            <li>Power Platform</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SAP Support Consultant -->
+                <div class="card text-dark bg-light m-3" style="width: 22rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">SAP Support Consultant</h4>
+                        <h5 class="card-subtitle text-primary">Remade d.o.o., Novi Sad</h5>
+                        <p class="card-text">October 2020 - September 2022</p>
+                        <ul>
+                            <li>SAP B1 1st and 2nd level Support</li>
+                            <li>Data Administration</li>
+                            <li>SQL queries</li>
+                            <li>Third-party add-on integrations</li>
+                            <li>Installation and rollout of new SAP Instances</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Data Analyst -->
+                <div class="card text-dark bg-light m-3" style="width: 22rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">Data Analyst</h4>
+                        <h5 class="card-subtitle text-primary">New Plant d.o.o, Novi Sad</h5>
+                        <p class="card-text">June 2015 - October 2020</p>
+                        <ul>
+                            <li>SAP B1 Data Administration</li>
+                            <li>SQL Queries in SAP Business One</li>
+                            <li>Periodic Sales Reports</li>
+                            <li>Inventory Analysis</li>
+                            <li>Procurement Demand Reports</li>
+                            <li>Advanced MS Excel and Google Sheets</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Skills Section-->
+        <section class="page-section bg-primary text-white mb-0" id="skills">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Experience</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">Technologies</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- About Section Content-->
-                <br>
-                
-                
-                
-
+                <!-- Technologies Section -->
                 <div class="row">
-                    
-                    
-                    
-                    
-                    <div class="col-8 ml-auto mr-auto text-center">
-                        <hr class="bg-primary">
-                        <div class="row">
-                            <div class="col"> 
-                                <h4>Data Engineer</h5>
-                                <h5 class="text-primary">Gorilla Sports Balkans d.o.o., Novi Sad</h5>
-                                <p>June 2023 - Present</p>
-                                
-                                <ul class="text-left">
-                                    <li>Power BI Desktop & Service</li>
-                                    <li>PowerQuery</li>
-                                    <li>Python | SQL</li>
-                                    <li>Google Cloud Platform (BigQuery)</li>
-                                    <li>Apache Airflow</li>
+                    <!-- Programming Languages Card -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card bg-secondary text-white h-100">
+                            <div class="card-header text-center">
+                                <h4>Programming Languages</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center gap-4 flex-wrap tech-icons">
+                                    <span class="icon-wrapper text-center">
+                                        <i class="devicon-azuresqldatabase-plain" style="font-size: 5em;" title="SQL"></i>
+                                    </span>
+                                    <span class="icon-wrapper text-center">
+                                        <i class="devicon-python-plain-wordmark" style="font-size: 5em;" title="Python"></i>
+                                    </span>
                                     
-                                    
-                                </ul>
                                 
-                                
+                                </div>
                             </div>
                         </div>
-                        <hr class="bg-primary">
-                        <div class="row">
-                            <div class="col"> 
-                                <h4>Data Engineer</h5>
-                                <h5 class="text-primary">Remade d.o.o., Novi Sad</h5>
-                                <p>September 2022 - June 2023</p>
-                                
-                                <ul class="text-left">
-                                    <li>Power BI Desktop & Service</li>
-                                    <li>PowerQuery</li>
-                                    <li>Power Platform</li>
-                                    <li>SQL</li>
-                                </ul>
-                                
-                                
-                            </div>
-                        </div>
-                        <hr class="bg-primary">
-                        <div class="row">
-                            <div class="col"> 
-                                <h4>SAP Support Consultant</h5>
-                                <h5 class="text-primary">Remade d.o.o., Novi Sad</h5>
-                                <p>October 2020 - September 2022</p>
-                                
-                                <ul class="text-left">
-                                    <li>SAP B1 1st and 2nd level Support</li>
-                                    <li>Data Administration</li>
-                                    <li>SQL queries</li>
-                                    <li>Third party add-on integrations</li>
-                                    <li>Installation and rollout of new SAP Instances</li>
-                                    
-                                    
-                                </ul>
-                                
-                                
-                            </div>
-                        </div>
-                        
-
-                        
-                        <hr class="bg-primary">
-                        <div class="row">
-                            <div class="col"> 
-                                <h4>Data Analyst</h5>
-                                    <h5 class="text-primary">New Plant d.o.o, Novi Sad</h5>
-                                    <p>June 2015 - October 2020</p>
-                                    
-                                    <ul class="text-left">
-                                        <li>SAP B1 Data Administration</li>
-                                        <li>SQL Queries in SAP Business One</li>
-                                        <li>Periodic Sales Reports</li>
-                                        <li>Inventory Analysis</li>
-                                        <li>Procurement Demand Reports</li>
-                                        <li>Advanced MS Excel and Google Sheets</li>
-                                        
-                                    </ul>
-                                    
-                            </div>
-                        </div>
-                        
-                        
                     </div>
-
                     
-                    
-                    
+                    <!-- Cloud Technologies Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card bg-secondary text-white h-100">
+                <div class="card-header text-center">
+                    <h4>Cloud Technologies</h4>
                 </div>
-                
+                <div class="card-body">
+                    <div class="d-flex justify-content-center gap-4 flex-wrap tech-icons">
+                        <span class="icon-wrapper text-center">
+                            <i class="devicon-googlecloud-plain" style="font-size: 5em;" title="Google Cloud Platform"></i>
+                            <p>Google Cloud Platform</p>
+                        </span>
+
+                        
+
+                        <span class="icon-wrapper text-center">
+                            <i class="devicon-apacheairflow-plain" style="font-size: 5em;" title="Apache Airflow"></i>
+                            <p>Apache Airflow</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                    <!-- Reporting Card -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card bg-secondary text-white h-100">
+                            <div class="card-header text-center">
+                                <h4>Reporting</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center gap-4 flex-wrap tech-icons">
+                                    <span class="icon-wrapper text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,300,150">
+                                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                                <g transform="scale(4,4)">
+                                                    <path d="M12.56836,4c-1.128,0 -2.25433,0.33561 -3.23633,1.09961c-1.5,1 -2.33203,2.667 -2.33203,4.5v21.40039c0,0.552 0.448,1 1,1c0.552,0 1,-0.448 1,-1v-21.40039c0,-1.191 0.52636,-2.22494 1.44336,-2.83594l0.06055,-0.04102l0.05859,-0.04492c0.577,-0.449 1.25286,-0.67773 2.00586,-0.67773c0.389,0 0.78902,0.06083 1.16602,0.17383l38.75195,12.17578c2.091,0.657 3.51367,2.59611 3.51367,4.78711v27.01563c0,2.114 -1.7105,3.83398 -3.8125,3.83398c-0.374,0 -0.75114,-0.05697 -1.11914,-0.16797c-1.82,-0.551 -3.75953,-1.14472 -5.76953,-1.76172c-0.643,-0.198 -1.29883,0.28308 -1.29883,0.95508c0,0.439 0.29094,0.82803 0.71094,0.95703c2.009,0.618 3.95134,1.21067 5.77734,1.76367c0.57,0.172 1.14122,0.25391 1.69922,0.25391c3.105,0 5.8125,-2.51898 5.8125,-5.83398v-27.01562c0,-3.065 -1.98906,-5.77631 -4.91406,-6.69531l-38.75391,-12.17578c-0.575,-0.173 -1.16867,-0.26562 -1.76367,-0.26562zM46,22c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h2c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1zM38.6875,23.00586c-2.018,-0.106 -3.6875,1.49914 -3.6875,3.49414v11.5v10.86523v2.0957v5.40625c0,1.895 1.4195,3.59436 3.3125,3.69336c2.018,0.106 3.6875,-1.50109 3.6875,-3.49609v-0.56445v-2.86523v-2.0957v-2.03906v-22.30273c0,-1.895 -1.4195,-3.59241 -3.3125,-3.69141zM38.5,25c0.827,0 1.5,0.673 1.5,1.5v30.06445c0,0.827 -0.673,1.5 -1.5,1.5c-0.827,0 -1.5,-0.673 -1.5,-1.5v-30.06445c0,-0.827 0.673,-1.5 1.5,-1.5zM28.5,27c-1.933,0 -3.5,1.567 -3.5,3.5v7.5v7.72852v2.09766v4.17383v1.5c0,1.933 1.567,3.5 3.5,3.5c1.933,0 3.5,-1.567 3.5,-3.5v-3.47656v-2.0957v-9.92773v-7.5c0,-1.933 -1.567,-3.5 -3.5,-3.5zM46,27c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h2c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1zM28.5,29c0.827,0 1.5,0.673 1.5,1.5v23c0,0.827 -0.673,1.5 -1.5,1.5c-0.827,0 -1.5,-0.673 -1.5,-1.5v-23c0,-0.827 0.673,-1.5 1.5,-1.5zM18.5,31c-1.933,0 -3.5,1.567 -3.5,3.5v3.5v4.57031v2.09766v4.83203c0,1.933 1.567,3.5 3.5,3.5c1.933,0 3.5,-1.567 3.5,-3.5v-2.61914v-2.09766v-6.7832v-3.5c0,-1.933 -1.567,-3.5 -3.5,-3.5zM46,32c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h2c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1zM18.5,33c0.827,0 1.5,0.673 1.5,1.5v15c0,0.827 -0.673,1.5 -1.5,1.5c-0.827,0 -1.5,-0.673 -1.5,-1.5v-15c0,-0.827 0.673,-1.5 1.5,-1.5zM8.5,34c-1.933,0 -3.5,1.567 -3.5,3.5v7.80273c0,1.895 1.4195,3.59241 3.3125,3.69141c2.018,0.106 3.6875,-1.49914 3.6875,-3.49414v-1.7832v-2.09961v-4.11719c0,-1.933 -1.567,-3.5 -3.5,-3.5zM8.5,36c0.827,0 1.5,0.673 1.5,1.5v8c0,0.827 -0.673,1.5 -1.5,1.5c-0.827,0 -1.5,-0.673 -1.5,-1.5v-8c0,-0.827 0.673,-1.5 1.5,-1.5zM46,37c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h2c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1zM46,42c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h2c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1zM46,47c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h2c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1z"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <p style="margin-top: 10px;">Power BI</p>
+                                    </span>
+                                    
+                                    <span class="icon-wrapper text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M28.875,0c-0.01953,0.00781 -0.04297,0.01953 -0.0625,0.03125l-28,5.3125c-0.47656,0.08984 -0.82031,0.51172 -0.8125,1v37.3125c-0.00781,0.48828 0.33594,0.91016 0.8125,1l28,5.3125c0.28906,0.05469 0.58984,-0.01953 0.82031,-0.20703c0.22656,-0.1875 0.36328,-0.46484 0.36719,-0.76172v-5h17c1.09375,0 2,-0.90625 2,-2v-34c0,-1.09375 -0.90625,-2 -2,-2h-17v-5c0.00391,-0.28906 -0.12109,-0.5625 -0.33594,-0.75391c-0.21484,-0.19141 -0.50391,-0.28125 -0.78906,-0.24609zM28,2.1875v4.34375c-0.13281,0.27734 -0.13281,0.59766 0,0.875v35.40625c-0.02734,0.13281 -0.02734,0.27344 0,0.40625v4.59375l-26,-4.96875v-35.6875zM30,8h17v34h-17v-5h4v-2h-4v-6h4v-2h-4v-5h4v-2h-4v-5h4v-2h-4zM36,13v2h8v-2zM6.6875,15.6875l5.46875,9.34375l-5.96875,9.34375h5l3.25,-6.03125c0.22656,-0.58203 0.375,-1.02734 0.4375,-1.3125h0.03125c0.12891,0.60938 0.25391,1.02344 0.375,1.25l3.25,6.09375h4.96875l-5.75,-9.4375l5.59375,-9.25h-4.6875l-2.96875,5.53125c-0.28516,0.72266 -0.48828,1.29297 -0.59375,1.65625h-0.03125c-0.16406,-0.60937 -0.35156,-1.15234 -0.5625,-1.59375l-2.6875,-5.59375zM36,20v2h8v-2zM36,27v2h8v-2zM36,35v2h8v-2z"></path></g></g>
+                                            </svg>
+                                        <p style="margin-top: 10px;">Excel</p>
+                                    </span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </section>
-
-
-        <!-- Skills Section-->
-<section class="page-section bg-primary text-white mb-0" id="skills">
-    <div class="container">
-        <!-- About Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-white">Technologies</h2>
-        <!-- Icon Divider-->
-        <div class="divider-custom divider-light">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-            <div class="divider-custom-line"></div>
-        </div>
-        <!-- Technologies Section -->
-        <div class="row">
-            <!-- Programming Languages Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card bg-secondary text-white h-100">
-                    <div class="card-header text-center">
-                        <h4>Programming Languages</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="d-flex justify-content-center gap-4 flex-wrap tech-icons">
-                            <span class="icon-wrapper text-center">
-                                <i class="devicon-azuresqldatabase-plain" style="font-size: 5em;" title="SQL"></i>
-                            </span>
-                            <span class="icon-wrapper text-center">
-                                <i class="devicon-python-plain-wordmark" style="font-size: 5em;" title="Python"></i>
-                            </span>
-                            
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Cloud Technologies Card -->
-<div class="col-md-4 mb-4">
-    <div class="card bg-secondary text-white h-100">
-        <div class="card-header text-center">
-            <h4>Cloud Technologies</h4>
-        </div>
-        <div class="card-body">
-            <div class="d-flex justify-content-center gap-4 flex-wrap tech-icons">
-                <span class="icon-wrapper text-center">
-                    <i class="devicon-googlecloud-plain" style="font-size: 5em;" title="Google Cloud Platform"></i>
-                    <p>Google Cloud Platform</p>
-                </span>
-
-                
-
-                <span class="icon-wrapper text-center">
-                    <i class="devicon-apacheairflow-plain" style="font-size: 5em;" title="Apache Airflow"></i>
-                    <p>Apache Airflow</p>
-                </span>
-            </div>
-        </div>
-    </div>
-</div>
-
-            <!-- Reporting Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card bg-secondary text-white h-100">
-                    <div class="card-header text-center">
-                        <h4>Reporting</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="d-flex justify-content-center gap-4 flex-wrap tech-icons">
-                            <span class="icon-wrapper text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,300,150">
-                                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                        <g transform="scale(4,4)">
-                                            <path d="M12.56836,4c-1.128,0 -2.25433,0.33561 -3.23633,1.09961c-1.5,1 -2.33203,2.667 -2.33203,4.5v21.40039c0,0.552 0.448,1 1,1c0.552,0 1,-0.448 1,-1v-21.40039c0,-1.191 0.52636,-2.22494 1.44336,-2.83594l0.06055,-0.04102l0.05859,-0.04492c0.577,-0.449 1.25286,-0.67773 2.00586,-0.67773c0.389,0 0.78902,0.06083 1.16602,0.17383l38.75195,12.17578c2.091,0.657 3.51367,2.59611 3.51367,4.78711v27.01563c0,2.114 -1.7105,3.83398 -3.8125,3.83398c-0.374,0 -0.75114,-0.05697 -1.11914,-0.16797c-1.82,-0.551 -3.75953,-1.14472 -5.76953,-1.76172c-0.643,-0.198 -1.29883,0.28308 -1.29883,0.95508c0,0.439 0.29094,0.82803 0.71094,0.95703c2.009,0.618 3.95134,1.21067 5.77734,1.76367c0.57,0.172 1.14122,0.25391 1.69922,0.25391c3.105,0 5.8125,-2.51898 5.8125,-5.83398v-27.01562c0,-3.065 -1.98906,-5.77631 -4.91406,-6.69531l-38.75391,-12.17578c-0.575,-0.173 -1.16867,-0.26562 -1.76367,-0.26562zM46,22c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h2c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1zM38.6875,23.00586c-2.018,-0.106 -3.6875,1.49914 -3.6875,3.49414v11.5v10.86523v2.0957v5.40625c0,1.895 1.4195,3.59436 3.3125,3.69336c2.018,0.106 3.6875,-1.50109 3.6875,-3.49609v-0.56445v-2.86523v-2.0957v-2.03906v-22.30273c0,-1.895 -1.4195,-3.59241 -3.3125,-3.69141zM38.5,25c0.827,0 1.5,0.673 1.5,1.5v30.06445c0,0.827 -0.673,1.5 -1.5,1.5c-0.827,0 -1.5,-0.673 -1.5,-1.5v-30.06445c0,-0.827 0.673,-1.5 1.5,-1.5zM28.5,27c-1.933,0 -3.5,1.567 -3.5,3.5v7.5v7.72852v2.09766v4.17383v1.5c0,1.933 1.567,3.5 3.5,3.5c1.933,0 3.5,-1.567 3.5,-3.5v-3.47656v-2.0957v-9.92773v-7.5c0,-1.933 -1.567,-3.5 -3.5,-3.5zM46,27c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h2c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1zM28.5,29c0.827,0 1.5,0.673 1.5,1.5v23c0,0.827 -0.673,1.5 -1.5,1.5c-0.827,0 -1.5,-0.673 -1.5,-1.5v-23c0,-0.827 0.673,-1.5 1.5,-1.5zM18.5,31c-1.933,0 -3.5,1.567 -3.5,3.5v3.5v4.57031v2.09766v4.83203c0,1.933 1.567,3.5 3.5,3.5c1.933,0 3.5,-1.567 3.5,-3.5v-2.61914v-2.09766v-6.7832v-3.5c0,-1.933 -1.567,-3.5 -3.5,-3.5zM46,32c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h2c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1zM18.5,33c0.827,0 1.5,0.673 1.5,1.5v15c0,0.827 -0.673,1.5 -1.5,1.5c-0.827,0 -1.5,-0.673 -1.5,-1.5v-15c0,-0.827 0.673,-1.5 1.5,-1.5zM8.5,34c-1.933,0 -3.5,1.567 -3.5,3.5v7.80273c0,1.895 1.4195,3.59241 3.3125,3.69141c2.018,0.106 3.6875,-1.49914 3.6875,-3.49414v-1.7832v-2.09961v-4.11719c0,-1.933 -1.567,-3.5 -3.5,-3.5zM8.5,36c0.827,0 1.5,0.673 1.5,1.5v8c0,0.827 -0.673,1.5 -1.5,1.5c-0.827,0 -1.5,-0.673 -1.5,-1.5v-8c0,-0.827 0.673,-1.5 1.5,-1.5zM46,37c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h2c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1zM46,42c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h2c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1zM46,47c-0.552,0 -1,0.448 -1,1c0,0.552 0.448,1 1,1h2c0.552,0 1,-0.448 1,-1c0,-0.552 -0.448,-1 -1,-1z"></path>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <p style="margin-top: 10px;">Power BI</p>
-                            </span>
-                            
-                            <span class="icon-wrapper text-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
-                                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M28.875,0c-0.01953,0.00781 -0.04297,0.01953 -0.0625,0.03125l-28,5.3125c-0.47656,0.08984 -0.82031,0.51172 -0.8125,1v37.3125c-0.00781,0.48828 0.33594,0.91016 0.8125,1l28,5.3125c0.28906,0.05469 0.58984,-0.01953 0.82031,-0.20703c0.22656,-0.1875 0.36328,-0.46484 0.36719,-0.76172v-5h17c1.09375,0 2,-0.90625 2,-2v-34c0,-1.09375 -0.90625,-2 -2,-2h-17v-5c0.00391,-0.28906 -0.12109,-0.5625 -0.33594,-0.75391c-0.21484,-0.19141 -0.50391,-0.28125 -0.78906,-0.24609zM28,2.1875v4.34375c-0.13281,0.27734 -0.13281,0.59766 0,0.875v35.40625c-0.02734,0.13281 -0.02734,0.27344 0,0.40625v4.59375l-26,-4.96875v-35.6875zM30,8h17v34h-17v-5h4v-2h-4v-6h4v-2h-4v-5h4v-2h-4v-5h4v-2h-4zM36,13v2h8v-2zM6.6875,15.6875l5.46875,9.34375l-5.96875,9.34375h5l3.25,-6.03125c0.22656,-0.58203 0.375,-1.02734 0.4375,-1.3125h0.03125c0.12891,0.60938 0.25391,1.02344 0.375,1.25l3.25,6.09375h4.96875l-5.75,-9.4375l5.59375,-9.25h-4.6875l-2.96875,5.53125c-0.28516,0.72266 -0.48828,1.29297 -0.59375,1.65625h-0.03125c-0.16406,-0.60937 -0.35156,-1.15234 -0.5625,-1.59375l-2.6875,-5.59375zM36,20v2h8v-2zM36,27v2h8v-2zM36,35v2h8v-2z"></path></g></g>
-                                    </svg>
-                                <p style="margin-top: 10px;">Excel</p>
-                            </span>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
-</section>
 
 
       
@@ -434,7 +419,7 @@
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/goranljiljak" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/shiljatbl" target="_blank"><i class="fab fa-fw fa-github"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/shilja" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/shiljotbl" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/goran_ljiljak/" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4" >
