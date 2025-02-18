@@ -376,20 +376,21 @@
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
+                    <!-- Portfolio Item 1 -->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="card h-100">
                             <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
-                                <i class="fas fa-chart-line fa-4x text-primary"></i>
+                                <i class="fas fa-database fa-4x text-primary"></i>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Sales Performance Analytics</h5>
-                                <p class="card-text">Interactive Power BI dashboard showcasing sales analytics with real-time KPIs, predictive analytics, and automated reporting. Features include dynamic filtering, drill-through capabilities, and custom DAX measures.</p>
+                                <h5 class="card-title">ETL Pipeline (Python & PostgreSQL)</h5>
+                                <p class="card-text">A Python-based ETL pipeline that calculates KPIs for employee shifts, breaks, and allowances, storing the results in a PostgreSQL database. Features include automated data extraction, transformation, and error handling.</p>
                                 <div class="tech-stack">
-                                    <span class="badge bg-primary">Power BI</span>
-                                    <span class="badge bg-primary">DAX</span>
-                                    <span class="badge bg-primary">SQL</span>
                                     <span class="badge bg-primary">Python</span>
+                                    <span class="badge bg-primary">PostgreSQL</span>
+                                    <span class="badge bg-primary">Pandas</span>
+                                    <span class="badge bg-primary">SQLAlchemy</span>
+                                    <span class="badge bg-primary">REST API</span>
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -397,6 +398,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Portfolio Item 2-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="card h-100">
@@ -444,67 +446,64 @@
         </section>
 
         <!-- Portfolio Modals -->
-        <!-- Portfolio Modal 1 -->
-        <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="portfolioModal1Label">Sales Performance Analytics</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <!-- Add Image Row -->
-                            <div class="row mb-4">
-                                <div class="col-md-12">
-                                    <img src="https://via.placeholder.com/800x400/007bff/ffffff?text=Sales+Dashboard+Preview" class="img-fluid rounded" alt="Sales Dashboard Preview">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <h4>Project Overview</h4>
-                                    <p>An advanced Power BI dashboard solution that transforms raw sales data into actionable insights. This project showcases the power of data visualization and analytics in driving business decisions.</p>
-                                    
-                                    <h4>Key Features</h4>
-                                    <ul>
-                                        <li>Real-time KPI tracking and monitoring</li>
-                                        <li>Predictive analytics using Python integration</li>
-                                        <li>Custom DAX measures for complex calculations</li>
-                                        <li>Dynamic filtering and drill-through capabilities</li>
-                                        <li>Automated data refresh and report distribution</li>
-                                    </ul>
+       <!-- Portfolio Modal 1 -->
+<div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="portfolioModal1Label">ETL Pipeline (Python & PostgreSQL)</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>Project Overview</h4>
+                            <p>This ETL pipeline is built in Python to extract shift data from a paginated REST API, transform it by calculating KPIs for employee shifts, breaks, and allowances, and load the structured data into a PostgreSQL database. The pipeline is containerized using Docker and follows a modular, scalable architecture.</p>
+                            
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Automated extraction of shift data from a paginated REST API</li>
+                                <li>Data transformation, including nested model extraction</li>
+                                <li>Calculation of KPIs such as mean break length and max allowance cost</li>
+                                <li>Efficient data storage in a PostgreSQL database</li>
+                                <li>Error handling and logging for reliability</li>
+                                <li>Dockerized setup for easy deployment</li>
+                            </ul>
 
-                                    <h4>Technical Details</h4>
-                                    <ul>
-                                        <li>Built using Power BI Desktop and Power BI Service</li>
-                                        <li>Data modeling using Star Schema</li>
-                                        <li>Python scripts for data preprocessing</li>
-                                        <li>SQL Server as the primary data source</li>
-                                        <li>Custom DAX functions for advanced analytics</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-4">
-                                    <h4>Technologies Used</h4>
-                                    <div class="tech-stack">
-                                        <span class="badge bg-primary mb-2">Power BI</span>
-                                        <span class="badge bg-primary mb-2">DAX</span>
-                                        <span class="badge bg-primary mb-2">SQL</span>
-                                        <span class="badge bg-primary mb-2">Python</span>
-                                        <span class="badge bg-primary mb-2">Power Query</span>
-                                    </div>
-                                </div>
+                            <h4>Technical Details</h4>
+                            <ul>
+                                <li>Developed in Python using Pandas and SQLAlchemy</li>
+                                <li>PostgreSQL for data storage and querying</li>
+                                <li>Handles API pagination for retrieving complete datasets</li>
+                                <li>Logging mechanism for monitoring and debugging</li>
+                                <li>Docker support for containerized execution</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Technologies Used</h4>
+                            <div class="tech-stack">
+                                <span class="badge bg-primary mb-2">Python</span>
+                                <span class="badge bg-primary mb-2">PostgreSQL</span>
+                                <span class="badge bg-primary mb-2">Pandas</span>
+                                <span class="badge bg-primary mb-2">SQLAlchemy</span>
+                                <span class="badge bg-primary mb-2">REST API</span>
+                                <span class="badge bg-primary mb-2">Docker</span>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <a href="https://github.com/yourusername/sales-analytics" class="btn btn-primary">View on GitHub</a>
-                    </div>
                 </div>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="https://github.com/shiljatbl/shifts-etl" class="btn btn-primary">View on GitHub</a>
+            </div>
         </div>
+    </div>
+</div>
 
         <!-- Portfolio Modal 2 -->
         <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
