@@ -1,0 +1,45 @@
+---
+const categories = [
+  {
+    title: 'Reporting & BI',
+    skills: ['Power BI Desktop & Service', 'Excel', 'Power Query', 'Power Platform'],
+  },
+  {
+    title: 'Programming & Data',
+    skills: ['Python', 'SQL', 'Pandas', 'SQLAlchemy'],
+  },
+  {
+    title: 'Cloud & Infrastructure',
+    skills: ['Google Cloud Platform', 'BigQuery', 'Apache Airflow', 'dbt', 'Docker', 'REST APIs'],
+  },
+  {
+    title: 'ERP',
+    skills: ['SAP B1', 'SAP BAPI'],
+  },
+];
+---
+
+<section id="skills" class="py-24 px-6 bg-slate-800/20 fade-section">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+      Skills & Technologies
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {categories.map((cat) => (
+        <div class="bg-slate-800/60 border border-slate-700/50 rounded-xl p-6 hover:border-blue-500/40 transition-colors group">
+          <h3 class="font-heading font-semibold text-white text-base mb-4 group-hover:text-blue-400 transition-colors">
+            {cat.title}
+          </h3>
+          <ul class="space-y-2.5">
+            {cat.skills.map((skill) => (
+              <li class="flex items-start gap-2.5 text-slate-400 text-sm">
+                <span class="mt-1.5 w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0" />
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

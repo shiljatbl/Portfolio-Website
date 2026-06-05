@@ -1,0 +1,101 @@
+---
+const experiences = [
+  {
+    role: 'Power BI Developer',
+    company: 'Mahle',
+    location: '',
+    period: 'May 2025 – Present',
+    current: true,
+    tags: ['Power BI Service Administration', 'Report Development', 'Project Management', 'Consulting'],
+  },
+  {
+    role: 'Data Engineer',
+    company: 'Gorilla Sports Balkans d.o.o.',
+    location: 'Novi Sad',
+    period: 'June 2023 – May 2025',
+    current: false,
+    tags: ['Power BI Desktop & Service', 'Power Query', 'Python', 'SQL', 'GCP / BigQuery', 'Apache Airflow'],
+  },
+  {
+    role: 'Data Engineer',
+    company: 'Remade d.o.o.',
+    location: 'Novi Sad',
+    period: 'September 2022 – June 2023',
+    current: false,
+    tags: ['Power BI Desktop & Service', 'Power Query', 'Power Platform', 'SQL'],
+  },
+  {
+    role: 'SAP Support Consultant',
+    company: 'Remade d.o.o.',
+    location: 'Novi Sad',
+    period: 'October 2020 – September 2022',
+    current: false,
+    tags: ['SAP B1 Support (L1 & L2)', 'Data Administration', 'SQL', 'Add-on Integrations', 'SAP Rollout'],
+  },
+  {
+    role: 'Data Analyst',
+    company: 'New Plant d.o.o.',
+    location: 'Novi Sad',
+    period: 'June 2015 – October 2020',
+    current: false,
+    tags: ['SAP B1', 'SQL', 'Sales Reports', 'Inventory Analysis', 'Excel', 'Google Sheets'],
+  },
+];
+---
+
+<section id="experience" class="py-24 px-6 fade-section">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-16 text-center">
+      Work Experience
+    </h2>
+
+    <div class="relative">
+      <!-- Vertical timeline line -->
+      <div class="absolute left-[7px] top-2 bottom-2 w-0.5 bg-slate-700/60" />
+
+      <div class="space-y-10">
+        {experiences.map((exp) => (
+          <div class="relative flex gap-6 group">
+            <!-- Timeline dot -->
+            <div
+              class={`relative z-10 flex-shrink-0 w-4 h-4 mt-1 rounded-full border-2 border-slate-900 transition-colors ${
+                exp.current
+                  ? 'bg-blue-400'
+                  : 'bg-slate-600 group-hover:bg-blue-500'
+              }`}
+            />
+
+            <!-- Content -->
+            <div class="flex-1">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-3">
+                <div>
+                  <h3 class="font-heading font-semibold text-white text-lg leading-snug">
+                    {exp.role}
+                  </h3>
+                  <p class="text-slate-400 text-sm mt-0.5">
+                    {exp.company}{exp.location ? `, ${exp.location}` : ''}
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 flex-shrink-0">
+                  {exp.current && (
+                    <span class="text-xs bg-blue-500/15 text-blue-400 px-2 py-0.5 rounded-full border border-blue-500/25 font-medium">
+                      Current
+                    </span>
+                  )}
+                  <span class="text-slate-500 text-sm">{exp.period}</span>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                {exp.tags.map((tag) => (
+                  <span class="text-xs bg-slate-800 text-slate-400 px-2.5 py-1 rounded-md border border-slate-700/60">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
