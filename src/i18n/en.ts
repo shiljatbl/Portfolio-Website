@@ -4,6 +4,7 @@ export const en = {
     skills: 'Skills',
     experience: 'Experience',
     services: 'Services',
+    certifications: 'Certifications',
     contact: 'Contact',
     blog: 'Blog',
     hireMe: "Let's Work",

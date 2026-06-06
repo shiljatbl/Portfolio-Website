@@ -6,6 +6,7 @@ export const de: Translations = {
     skills: 'Fähigkeiten',
     experience: 'Erfahrung',
     services: 'Leistungen',
+    certifications: 'Zertifizierungen',
     contact: 'Kontakt',
     blog: 'Blog',
     hireMe: 'Zusammenarbeiten',

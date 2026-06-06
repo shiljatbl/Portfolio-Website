@@ -6,6 +6,7 @@ export const sr: Translations = {
     skills: 'Veštine',
     experience: 'Iskustvo',
     services: 'Usluge',
+    certifications: 'Sertifikati',
     contact: 'Kontakt',
     blog: 'Blog',
     hireMe: 'Sarađujmo',
