@@ -6,7 +6,7 @@ export const en = {
     services: 'Services',
     contact: 'Contact',
     blog: 'Blog',
-    hireMe: 'Hire Me',
+    hireMe: "Let's Work",
     resume: 'Resume',
   },
   hero: {

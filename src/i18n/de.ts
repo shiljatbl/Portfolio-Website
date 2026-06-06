@@ -8,7 +8,7 @@ export const de: Translations = {
     services: 'Leistungen',
     contact: 'Kontakt',
     blog: 'Blog',
-    hireMe: 'Jetzt buchen',
+    hireMe: 'Zusammenarbeiten',
     resume: 'Lebenslauf',
   },
   hero: {

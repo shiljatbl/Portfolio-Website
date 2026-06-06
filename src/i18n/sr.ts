@@ -8,7 +8,7 @@ export const sr: Translations = {
     services: 'Usluge',
     contact: 'Kontakt',
     blog: 'Blog',
-    hireMe: 'Angažujte me',
+    hireMe: 'Sarađujmo',
     resume: 'CV',
   },
   hero: {
