@@ -15,6 +15,7 @@ export const en = {
     tagline: 'Power BI Developer · Data Engineer · Data Analyst',
     quote:
       '“Data is like coffee — unprocessed, it’s just a bean. My job? Brewing it into something that keeps your business running!”',
+    certBadge: 'Microsoft Certified — PL-300 Power BI Data Analyst',
     viewExperience: 'View Experience',
     contactMe: 'Contact Me',
   },

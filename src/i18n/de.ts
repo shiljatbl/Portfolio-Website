@@ -17,6 +17,7 @@ export const de: Translations = {
     tagline: 'Power BI Developer · Data Engineer · Data Analyst',
     quote:
       '„Daten sind wie Kaffee — unverarbeitet sind sie nur eine Bohne. Mein Job? Sie in etwas zu verwandeln, das Ihr Unternehmen am Laufen hält!“',
+    certBadge: 'Microsoft Certified — PL-300 Power BI Data Analyst',
     viewExperience: 'Erfahrung ansehen',
     contactMe: 'Kontakt aufnehmen',
   },

@@ -17,6 +17,7 @@ export const sr: Translations = {
     tagline: 'Power BI Developer · Data Engineer · Data Analyst',
     quote:
       '„Podaci su poput kafe — neobrađeni, samo su zrno. Moj posao? Da ih transformišem u nešto što pokreće vaš biznis!“',
+    certBadge: 'Microsoft Certified — PL-300 Power BI Data Analyst',
     viewExperience: 'Pogledaj iskustvo',
     contactMe: 'Kontaktiraj me',
   },
