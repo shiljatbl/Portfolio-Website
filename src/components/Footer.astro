@@ -1,4 +1,13 @@
 ---
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/utils';
+
+interface Props {
+  lang?: Lang;
+}
+const { lang = 'en' } = Astro.props;
+const t = useTranslations(lang);
+
 const year = new Date().getFullYear();
 ---
 
@@ -44,16 +53,16 @@ const year = new Date().getFullYear();
 
     <!-- Bottom bar -->
     <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-zinc-600 text-sm w-full">
-      <p>&copy; {year} Goran Ljiljak. All rights reserved.</p>
+      <p>&copy; {year} Goran Ljiljak. {t.footer.rights}</p>
       <p>
-        Built with{' '}
+        {t.footer.builtWith}{' '}
         <a
           href="https://astro.build"
           target="_blank"
           rel="noopener noreferrer"
           class="text-yellow-600 hover:text-yellow-400 transition-colors"
         >Astro</a>
-        {' '}&amp;{' '}
+        {' '}{t.footer.and}{' '}
         <a
           href="https://tailwindcss.com"
           target="_blank"

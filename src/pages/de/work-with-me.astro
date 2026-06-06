@@ -1,17 +1,17 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Nav from '../components/Nav.astro';
-import Footer from '../components/Footer.astro';
-import { useTranslations } from '../i18n/utils';
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Footer from '../../components/Footer.astro';
+import { useTranslations } from '../../i18n/utils';
 
-const lang = 'en' as const;
+const lang = 'de' as const;
 const t = useTranslations(lang);
 const p = t.workWithMePage;
 ---
 
 <Layout
-  title="Work With Me | Goran Ljiljak"
-  description="Hire Goran Ljiljak for Power BI development, data modelling, and dashboard consulting."
+  title="Zusammenarbeit | Goran Ljiljak"
+  description="Beauftragen Sie Goran Ljiljak für Power BI-Entwicklung, Datenmodellierung und Dashboard-Beratung."
   lang={lang}
 >
   <Nav lang={lang} />

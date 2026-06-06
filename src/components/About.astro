@@ -1,12 +1,20 @@
 ---
 import { Image } from 'astro:assets';
 import profilePhoto from '../assets/profile.svg';
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/utils';
+
+interface Props {
+  lang?: Lang;
+}
+const { lang = 'en' } = Astro.props;
+const t = useTranslations(lang);
 ---
 
 <section id="about" class="py-24 px-6 bg-zinc-900 fade-section">
   <div class="max-w-5xl mx-auto flex flex-col items-center">
     <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-10 text-center">
-      About Me
+      {t.about.heading}
     </h2>
 
     <!-- Profile photo -->
@@ -25,29 +33,11 @@ import profilePhoto from '../assets/profile.svg';
 
     <!-- Bio text -->
     <div class="space-y-6 text-zinc-400 text-lg leading-relaxed text-center max-w-[700px]">
-      <p>
-        I am a Power BI Developer and Data Consultant based in Novi Sad, Serbia, with over 10 years
-        of experience working across data, reporting, and business systems.
-      </p>
-      <p>
-        My focus is on turning complex data into clear, actionable reports and dashboards that help
-        businesses make better decisions. I specialise in Power BI report development and service
-        administration, data modelling, and building reporting solutions that people actually use.
-      </p>
-      <p>
-        My background spans the full data stack — from SAP ERP systems and SQL databases, through
-        data engineering with Python and Google Cloud Platform, to front-end reporting in Power BI.
-        That combination lets me understand a business problem at every layer, from the raw data
-        source to the executive dashboard.
-      </p>
-      <p>
-        I am fluent in Serbian, English, and German, which allows me to work effectively with
-        international teams and clients across Europe.
-      </p>
-      <p>
-        If you are looking for someone to build, improve, or take ownership of your Power BI
-        reporting — let's connect.
-      </p>
+      <p>{t.about.p1}</p>
+      <p>{t.about.p2}</p>
+      <p>{t.about.p3}</p>
+      <p>{t.about.p4}</p>
+      <p>{t.about.p5}</p>
     </div>
   </div>
 </section>

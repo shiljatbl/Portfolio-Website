@@ -1,19 +1,51 @@
 ---
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/utils';
+
+interface Props {
+  lang?: Lang;
+}
+const { lang = 'en' } = Astro.props;
+const t = useTranslations(lang);
+
+const base = lang === 'en' ? '/' : `/${lang}/`;
+
 const navLinks = [
-  { href: '/#about', label: 'About' },
-  { href: '/#services', label: 'Services' },
-  { href: '/#skills', label: 'Skills' },
-  { href: '/#experience', label: 'Experience' },
-  { href: '/#contact', label: 'Contact' },
-  { href: '/work-with-me', label: 'Hire Me' },
-  { href: '/blog', label: 'Blog' },
+  { href: `${base}#about`, label: t.nav.about },
+  { href: `${base}#skills`, label: t.nav.skills },
+  { href: `${base}#experience`, label: t.nav.experience },
+  { href: `${base}#services`, label: t.nav.services },
+  { href: `${base}#contact`, label: t.nav.contact },
+  { href: '/blog', label: t.nav.blog },
+  { href: lang === 'en' ? '/work-with-me' : `/${lang}/work-with-me`, label: t.nav.hireMe },
+];
+
+// Build language-switcher URLs from the current request path
+const pathname = Astro.url.pathname;
+let strippedPath = pathname;
+if (strippedPath.startsWith('/sr')) strippedPath = strippedPath.slice(3) || '/';
+else if (strippedPath.startsWith('/de')) strippedPath = strippedPath.slice(3) || '/';
+// Blog is English-only — switch back to home for SR/DE
+const switchPath = strippedPath.startsWith('/blog') ? '/' : strippedPath;
+
+const langUrls: Record<Lang, string> = {
+  en: switchPath,
+  sr: `/sr${switchPath === '/' ? '/' : switchPath}`,
+  de: `/de${switchPath === '/' ? '/' : switchPath}`,
+};
+
+const langs: { code: Lang; label: string }[] = [
+  { code: 'en', label: 'EN' },
+  { code: 'sr', label: 'SR' },
+  { code: 'de', label: 'DE' },
 ];
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-zinc-900">
   <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
     <a
-      href="/"
+      href={base}
+      data-logo
       class="flex items-center gap-2 whitespace-nowrap font-heading font-semibold text-white text-lg tracking-widest uppercase hover:text-yellow-400 transition-colors"
     >
       Goran Ljiljak
@@ -32,6 +64,22 @@ const navLinks = [
             </a>
           </li>
         ))}
+
+        <!-- Language switcher -->
+        <li class="flex items-center gap-1 text-sm font-bold tracking-widest">
+          {langs.map(({ code, label }, i) => (
+            <>
+              <a
+                href={langUrls[code]}
+                class={`transition-colors ${code === lang ? 'text-[#f7dd30]' : 'text-white hover:text-[#f7dd30]'}`}
+              >
+                {label}
+              </a>
+              {i < langs.length - 1 && <span class="text-zinc-700">|</span>}
+            </>
+          ))}
+        </li>
+
         <li>
           <a
             href="/Resume.pdf"
@@ -39,7 +87,7 @@ const navLinks = [
             rel="noopener noreferrer"
             class="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-sm px-4 py-1.5 rounded tracking-wider uppercase transition-colors"
           >
-            Resume
+            {t.nav.resume}
           </a>
         </li>
       </ul>
@@ -52,12 +100,7 @@ const navLinks = [
         aria-expanded="false"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </nav>
@@ -76,6 +119,19 @@ const navLinks = [
           </a>
         </li>
       ))}
+      <li class="flex items-center gap-2 text-sm font-bold tracking-widest pt-1">
+        {langs.map(({ code, label }, i) => (
+          <>
+            <a
+              href={langUrls[code]}
+              class={`transition-colors ${code === lang ? 'text-[#f7dd30]' : 'text-white hover:text-[#f7dd30]'}`}
+            >
+              {label}
+            </a>
+            {i < langs.length - 1 && <span class="text-zinc-700">|</span>}
+          </>
+        ))}
+      </li>
       <li>
         <a
           href="/Resume.pdf"
@@ -83,7 +139,7 @@ const navLinks = [
           rel="noopener noreferrer"
           class="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-sm px-4 py-1.5 rounded tracking-wider uppercase transition-colors"
         >
-          Resume
+          {t.nav.resume}
         </a>
       </li>
     </ul>
@@ -91,9 +147,11 @@ const navLinks = [
 </header>
 
 <script>
-  const logo = document.querySelector('header a[href="/"]') as HTMLAnchorElement | null;
+  const logo = document.querySelector('header a[data-logo]') as HTMLAnchorElement | null;
   logo?.addEventListener('click', (e) => {
-    if (window.location.pathname === '/') {
+    const logoHref = logo.getAttribute('href') ?? '/';
+    const current = window.location.pathname;
+    if (current === logoHref || current === logoHref.replace(/\/$/, '')) {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
