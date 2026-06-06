@@ -8,6 +8,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://goranljiljak.com',
+  favicon: '/favicon.svg',
   vite: {
     plugins: [tailwindcss()]
   },
