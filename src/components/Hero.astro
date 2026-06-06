@@ -13,49 +13,19 @@ const base = lang === 'en' ? '/' : `/${lang}/`;
 
 <section
   id="hero"
-  class="relative min-h-screen flex items-center justify-center px-6 overflow-hidden bg-black"
+  class="relative h-screen flex items-center justify-center px-6 overflow-hidden"
 >
-  <!-- Yellow spotlight from upper-left -->
+  <!-- Nebula glow — purple/blue at center-bottom -->
   <div
     class="absolute inset-0 pointer-events-none"
-    style="background: radial-gradient(ellipse 55% 35% at 18% 12%, rgba(250,204,21,0.07) 0%, transparent 70%);"
+    style="background: radial-gradient(ellipse 70% 45% at 50% 90%, rgba(59,49,130,0.15) 0%, transparent 70%);"
   />
 
-  <!-- Subtle city-grid pattern -->
+  <!-- Warm yellow center glow -->
   <div
     class="absolute inset-0 pointer-events-none"
-    style="opacity: 0.025; background-image: linear-gradient(rgba(250,204,21,1) 1px, transparent 1px), linear-gradient(90deg, rgba(250,204,21,1) 1px, transparent 1px); background-size: 80px 80px;"
+    style="background: radial-gradient(ellipse 55% 45% at 50% 50%, rgba(247,221,48,0.03) 0%, transparent 70%);"
   />
-
-  <!-- Bat signal -->
-  <div class="absolute inset-0 flex items-center justify-center pointer-events-none" style="opacity: 0.07;">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="w-[700px] h-[700px]">
-      <circle cx="250" cy="250" r="230" fill="none" stroke="#facc15" stroke-width="3"/>
-      <circle cx="250" cy="250" r="200" fill="none" stroke="#facc15" stroke-width="1" opacity="0.5"/>
-      <g transform="translate(250, 265)">
-        <path fill="#facc15" d="
-          M 0 -5
-          C -18 -28, -48 -38, -80 -22
-          C -96 -14, -100 -26, -88 -32
-          C -70 -40, -44 -34, -28 -18
-          C -24 -36, -14 -46, 0 -28
-          C 14 -46, 24 -36, 28 -18
-          C 44 -34, 70 -40, 88 -32
-          C 100 -26, 96 -14, 80 -22
-          C 48 -38, 18 -28, 0 -5
-          Z
-          M 0 -5
-          C -12 8, -27 14, -38 11
-          C -48 8, -50 18, -40 21
-          C -25 25, -3 14, 0 11
-          C 3 14, 25 25, 40 21
-          C 50 18, 48 8, 38 11
-          C 27 14, 12 8, 0 -5
-          Z
-        "/>
-      </g>
-    </svg>
-  </div>
 
   <div class="relative z-10 max-w-4xl mx-auto text-center">
     <p class="text-yellow-500 font-medium text-xs uppercase tracking-[0.3em] mb-6">

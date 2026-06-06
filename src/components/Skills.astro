@@ -13,9 +13,12 @@ const skillItems = [
   { titleKey: 'programmingData' as const, skills: ['Python', 'SQL', 'Pandas'] },
   { titleKey: 'cloudInfra' as const, skills: ['Google Cloud Platform', 'BigQuery', 'Docker', 'REST APIs', 'SAP HANA'] },
 ];
+
+const credentialUrl =
+  'https://learn.microsoft.com/api/credentials/share/en-gb/GoranLjiljak-1952/C28E4DF4DD8F15D1?sharingId=B0E52D9B8EDA0B19';
 ---
 
-<section id="skills" class="py-24 px-6 bg-black fade-section">
+<section id="skills" class="py-24 px-6 fade-section">
   <div class="max-w-6xl mx-auto">
     <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-12 text-center tracking-wider uppercase">
       {t.skills.heading}
@@ -36,6 +39,39 @@ const skillItems = [
           </ul>
         </div>
       ))}
+
+      <!-- Certification card — spans full row -->
+      <div class="col-span-full group relative flex gap-0 bg-zinc-900/80 border border-zinc-800 rounded-xl overflow-hidden transition-all duration-300 hover:border-yellow-500/50">
+        <div class="w-1 flex-shrink-0 bg-[#f7dd30]" />
+        <div class="flex flex-1 flex-col sm:flex-row sm:items-center justify-between gap-6 p-6">
+          <div class="flex-1">
+            <p class="text-xs font-bold text-[#f7dd30] tracking-widest uppercase mb-1">
+              Microsoft · 2026 · PL-300
+            </p>
+            <h3 class="font-heading font-semibold text-white text-base mb-2 group-hover:text-yellow-400 transition-colors tracking-wide uppercase">
+              Microsoft Certified: Power BI Data Analyst Associate
+            </h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Validates the ability to design and build scalable data models, clean and transform data,
+              and enable advanced analytic capabilities that provide meaningful business value through
+              easy-to-comprehend Power BI visualizations.
+            </p>
+          </div>
+          <div class="flex sm:flex-col items-center gap-4 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-[#f7dd30]/70 hidden sm:block">
+              <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+            </svg>
+            <a
+              href={credentialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-block border border-[#f7dd30]/60 text-[#f7dd30] hover:bg-[#f7dd30] hover:text-black font-bold text-xs px-4 py-2 rounded transition-colors tracking-widest uppercase whitespace-nowrap"
+            >
+              {t.certifications.viewCertificate}
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
