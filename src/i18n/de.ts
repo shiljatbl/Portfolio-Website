@@ -85,6 +85,10 @@ export const de: Translations = {
     viewAll: 'Alle ansehen →',
     noPosts: 'Noch keine Beiträge. Schauen Sie bald wieder vorbei.',
   },
+  certifications: {
+    heading: 'Zertifizierungen',
+    viewCertificate: 'Zertifikat ansehen',
+  },
   workWithMePage: {
     heading: 'Zusammenarbeit',
     available: 'Verfügbar für Nebenprojekte',

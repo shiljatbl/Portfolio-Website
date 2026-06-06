@@ -83,6 +83,10 @@ export const en = {
     viewAll: 'View all →',
     noPosts: 'No posts yet. Check back soon.',
   },
+  certifications: {
+    heading: 'Certifications',
+    viewCertificate: 'View Certificate',
+  },
   workWithMePage: {
     heading: 'Work With Me',
     available: 'Available for side projects',

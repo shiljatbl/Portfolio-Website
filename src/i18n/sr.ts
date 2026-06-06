@@ -85,6 +85,10 @@ export const sr: Translations = {
     viewAll: 'Pogledaj sve →',
     noPosts: 'Još nema objava. Proverite uskoro.',
   },
+  certifications: {
+    heading: 'Sertifikati',
+    viewCertificate: 'Pogledaj sertifikat',
+  },
   workWithMePage: {
     heading: 'Saradnja',
     available: 'Dostupan za bočne projekte',
